@@ -1,0 +1,153 @@
+properties:
+  configurationVersion: 0.2.0
+  resources:
+    - resource: Microsoft.Windows.Developer/DeveloperMode
+      directives:
+        description: Enable Developer Mode
+        allowPrerelease: true
+      settings:
+        Ensure: Present
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Installing JGraph.Draw
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        id: "JGraph.Draw"
+        source: winget
+      id: JGraph.Draw
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Installing Microsoft.VisualStudio.2022.Community
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        id: "Microsoft.VisualStudio.2022.Community"
+        source: winget
+      id: Microsoft.VisualStudio.2022.Community
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Installing Kubernetes.kubectl
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        id: "Kubernetes.kubectl"
+        source: winget
+      id: Kubernetes.kubectl
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Installing Git.Git
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        id: "Git.Git"
+        source: winget
+      id: Git.Git
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Installing Microsoft.WindowsTerminal.Preview
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        id: "Microsoft.WindowsTerminal.Preview"
+        source: winget
+      id: Microsoft.WindowsTerminal.Preview
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Installing Microsoft.VisualStudioCode
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        id: "Microsoft.VisualStudioCode"
+        source: winget
+      id: Microsoft.VisualStudioCode
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Installing JanDeDobbeleer.OhMyPosh
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        id: "JanDeDobbeleer.OhMyPosh"
+        source: winget
+      id: JanDeDobbeleer.OhMyPosh
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Installing Microsoft.Bicep
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        id: "Microsoft.Bicep"
+        source: winget
+      id: Microsoft.Bicep
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Installing Microsoft.PowerShell
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        id: "Microsoft.PowerShell"
+        source: winget
+      id: Microsoft.PowerShell
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Installing Microsoft.VisualStudioCode.Insiders
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        id: "Microsoft.VisualStudioCode.Insiders"
+        source: winget
+      id: Microsoft.VisualStudioCode.Insiders
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Installing Microsoft.PowerToys
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        id: "Microsoft.PowerToys"
+        source: winget
+      id: Microsoft.PowerToys
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Installing GitHub.cli
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        id: "GitHub.cli"
+        source: winget
+      id: GitHub.cli
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Installing Microsoft.AzureCLI
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        id: "Microsoft.AzureCLI"
+        source: winget
+      id: Microsoft.AzureCLI
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Installing GitHub.GitHubDesktop
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        id: "GitHub.GitHubDesktop"
+        source: winget
+      id: GitHub.GitHubDesktop
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Installing Brave.Brave
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        id: "Brave.Brave"
+        source: winget
+      id: Brave.Brave
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Installing Python.Python.3.9
+        allowPrerelease: true
+        securityContext: current
+      settings:
+        id: "Python.Python.3.9"
+        source: winget
+      id: Python.Python.3.9
